@@ -1,0 +1,110 @@
+package com.ust.srs.dao;
+import java.util.ArrayList;
+
+import com.ust.srs.bean.PassengerBean;
+import com.ust.srs.bean.RouteBean;
+import com.ust.srs.bean.ScheduleBean;
+import com.ust.srs.bean.ShipBean;
+import com.ust.srs.service.*;
+
+public class AdminstratorDAO implements Adminstrator{
+
+	@Override
+	public String addShip(ShipBean shipbean) {
+		// TODO Auto-generated method stub
+		Ship.add(
+		return null;
+	}
+
+	@Override
+	public boolean modifyShip(ShipBean Shipbean) {
+		// TODO Auto-generated method stub
+		return false;
+	}
+
+	@Override
+	public int removeShip(ArrayList<String> ShipId) {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+
+	@Override
+	public String addSchedule(ScheduleBean schedulebean) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public boolean modifySchedule(ScheduleBean schedulebean) {
+		// TODO Auto-generated method stub
+		return false;
+	}
+
+	@Override
+	public int removeSchedule(ArrayList<String> scheduleid) {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+
+	@Override
+	public String addRoute(RouteBean routebean) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public boolean modifyRoute(RouteBean routebean) {
+		// TODO Auto-generated method stub
+		return false;
+	}
+
+	@Override
+	public int removeRoute(String routeid) {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+
+	@Override
+	public ShipBean viewByShipId(String ShipId) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public RouteBean viewByRouteId(String routeid) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public ArrayList<ShipBean> viewByAllShips() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public ArrayList<RouteBean> viewByAllRoute() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public ArrayList<ScheduleBean> viewByAllSchedule() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public ScheduleBean viewByScheduleId(String scheduleid) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public ArrayList<PassengerBean> viewPasengersByShip(String scheduleid) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+	
+
+}
