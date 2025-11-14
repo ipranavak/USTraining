@@ -8,7 +8,7 @@ class Appointment implements Serializable {
 class AppointmentSaver {
     public synchronized void saveAppointment(Appointment a){
         try(ObjectOutputStream o =
-            new ObjectOutputStream(new FileOutputStream("appt.ser", true))){
+            new ObjectOutputStream(new FileOutputStream("appt.txt", true))){
             o.writeObject(a);
             System.out.println("Saved: "+a.doctor);
         } catch(Exception e){}
