@@ -19,7 +19,7 @@ public class ExportTest {
         FileExporter f1 = new FileExporter();
         FileExporter f2 = new FileExporter();
 
-        new Thread(() -> f1.export("A","a.ser")).start();
-        new Thread(() -> f2.export("B","b.ser")).start();
+        new Thread(() -> f1.export("A","a.txt")).start();
+        new Thread(() -> f2.export("B","b.txt")).start();
     }
 }
