@@ -8,7 +8,7 @@ class Account implements Serializable {
 class TransactionSaver {
     public synchronized void saveTransaction(Account a){
         try(ObjectOutputStream o =
-            new ObjectOutputStream(new FileOutputStream("txn.ser", true))){
+            new ObjectOutputStream(new FileOutputStream("txn.txt", true))){
             o.writeObject(a);
             System.out.println("Saved txn: "+a.accNo);
         } catch(Exception e){}
