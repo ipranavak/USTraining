@@ -5,7 +5,7 @@ class ClinicConfig implements Serializable {
 
     public static synchronized void saveConfig(){
         try(ObjectOutputStream o =
-            new ObjectOutputStream(new FileOutputStream("config.ser"))){
+            new ObjectOutputStream(new FileOutputStream("config.txt"))){
             o.writeObject(name);
             System.out.println("Config Saved");
         } catch(Exception e){}
