@@ -10,7 +10,7 @@ class ReportExporter {
     public void exportReport(PatientReport r) {
         synchronized(r){
             try(ObjectOutputStream o =
-                new ObjectOutputStream(new FileOutputStream(r.details+".ser"))){
+                new ObjectOutputStream(new FileOutputStream(r.details+".txt"))){
                 o.writeObject(r);
                 System.out.println("Saved: "+r.details);
             } catch(Exception e){}
