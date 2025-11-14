@@ -6,7 +6,7 @@ class Doctor implements Serializable {
 
     public synchronized void serializeDoctor(){
         try(ObjectOutputStream o =
-            new ObjectOutputStream(new FileOutputStream(name+".ser"))){
+            new ObjectOutputStream(new FileOutputStream(name+".txt"))){
             o.writeObject(this);
             System.out.println("Saved doctor: "+name);
         } catch(Exception e){}
