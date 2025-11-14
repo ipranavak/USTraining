@@ -3,7 +3,7 @@ import java.io.*;
 class LogWriter {
     public static synchronized void writeLog(String msg){
         try(ObjectOutputStream o =
-            new ObjectOutputStream(new FileOutputStream("log.ser", true))){
+            new ObjectOutputStream(new FileOutputStream("log.txt", true))){
             o.writeObject(msg);
             System.out.println("Logged: "+msg);
         } catch(Exception e){}
