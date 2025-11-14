@@ -5,7 +5,7 @@ class HospitalStats implements Serializable {
 
     public static synchronized void saveStats(){
         try(ObjectOutputStream o =
-            new ObjectOutputStream(new FileOutputStream("stats.ser"))){
+            new ObjectOutputStream(new FileOutputStream("stats.txt"))){
             o.writeObject(patientCount);
             System.out.println("Saved count: "+patientCount);
         } catch(Exception e){}
