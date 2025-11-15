@@ -1,0 +1,21 @@
+import java.util.function.Consumer;
+
+public class ConsumerDemo {
+    public static void main(String[] args) {
+
+        // A Consumer that prints a string
+        Consumer<String> printer = s -> System.out.println("Hello " + s);
+
+        // Using the consumer
+        printer.accept("AK");   // Output: Hello AK
+
+        // Another Consumer that converts to upper case and prints
+        Consumer<String> upper = s -> System.out.println(s.toUpperCase());
+
+        // Combine consumers
+        printer.andThen(upper).accept("ak");
+        // Output:
+        // Hello ak
+        // AK
+    }
+}
